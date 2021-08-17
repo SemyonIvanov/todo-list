@@ -15,7 +15,7 @@ function render(collection) {
             newTaskText.addEventListener("blur", (e) => editTask(e, index));
             window.setTimeout(() => newTaskText.focus(), 0);
         } else {
-            newTaskText = document.createElement('p')
+            newTaskText = document.createElement('p');
         }
         const checkedTask = document.createElement('input');
         const deleteBtn = document.createElement('button');
@@ -87,7 +87,7 @@ function onChangeText(index) {
         tasksBody.removeChild(tasksBody.firstChild);
     }
     localStorage.setItem('tasks', JSON.stringify(tasks));
-    render(tasks)
+    render(tasks);
 }
 
 function editTask(e, index) {
