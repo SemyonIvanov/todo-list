@@ -1,1 +1,6 @@
 /.idea/**
+/todo-frontend/.idea/**
+/todo-react/.idea/**
+/todo-react/node_modules/**
+/todo-backend/.idea/**
+/todo-backend/node_modules/**

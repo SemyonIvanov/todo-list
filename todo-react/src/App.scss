@@ -1,0 +1,75 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 360px;
+
+  h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .add-task {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+
+    &__button {
+      height: 26px;
+      background: #686868;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      padding: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .task {
+      display: flex;
+      min-width: 280px;
+      align-items: center;
+      margin-bottom: 10px;
+      padding: 5px;
+      border-bottom: 2px gray solid;
+
+      input {
+        min-width: 20px;
+        min-height: 20px;
+      }
+
+      .done-text {
+        opacity: 0.3;
+        text-decoration: line-through;
+      }
+
+      .delete-button {
+        border: none;
+        cursor: pointer;
+        border-right: 1px gray solid;
+        background: white;
+      }
+
+      .edit-button {
+        border: none;
+        cursor: pointer;
+        background: white;
+      }
+    }
+  }
+}
+
+.text-task {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 200px;
+}
